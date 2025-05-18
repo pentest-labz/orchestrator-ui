@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { triggerScan } from '../../api/scan.js'
 import useAuth from '../../hooks/useAuth.js'
+import { Link } from 'react-router-dom'
 
 export default function ScanForm() {
   const { token, logout } = useAuth()
@@ -58,9 +59,14 @@ export default function ScanForm() {
       <div className="card w-100" style={{ maxWidth: '600px' }}>
         <div className="card-header d-flex justify-content-between align-items-center">
           <h5 className="mb-0">New Scan</h5>
-          <button onClick={logout} className="btn btn-outline-secondary btn-sm">
-            Logout
-          </button>
+           <div>
+             <Link to="/" className="btn btn-outline-primary btn-sm me-2">
+               Home
+             </Link>
+             <button onClick={logout} className="btn btn-outline-secondary btn-sm">
+               Logout
+             </button>
+           </div>
         </div>
 
         <div className="card-body">
