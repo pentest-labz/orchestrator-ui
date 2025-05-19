@@ -10,7 +10,18 @@ export default function Home() {
       description: 'Run network port scans and view results',
       path: '/scan',
     },
+    {
+      title: 'Brute-Force Service',
+      description: 'Attempt credential brute-force against login forms',
+      path: '/brute',
+    },
+    {
+      title: 'SQL Injection Service',
+      description: 'Test web endpoints for SQL injection vulnerabilities',
+      path: '/sqlinject',
+    },
     // add more services here
+
   ]
 
   return (
