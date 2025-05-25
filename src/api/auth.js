@@ -1,4 +1,4 @@
-const API_URL = "http://auth-service:8002"
+const API_URL = "http://localhost:8002"
 
 export async function register({ username, password }) {
   const res = await fetch(`${API_URL}/register`, {
