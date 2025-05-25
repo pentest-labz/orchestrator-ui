@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:5002'
+const BASE = 'http://bruteforce-service:5002'
 
 export async function triggerBrute(body, token, signal) {
   const url = `${BASE}/brute`

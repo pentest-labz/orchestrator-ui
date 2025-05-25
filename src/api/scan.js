@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:8001'
+const BASE = 'http://scanner-service:8001'
 
 export async function triggerScan(params, token, signal) {
   const url = new URL(`${BASE}/scan`, window.location.origin)

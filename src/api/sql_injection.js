@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:5003'
+const BASE = 'http://sql-exploit-service:5003'
 
 export async function triggerSqlInject(body, token, signal) {
   const url = `${BASE}/sqlinject`
