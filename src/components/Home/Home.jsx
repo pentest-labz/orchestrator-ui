@@ -7,7 +7,7 @@ export default function Home() {
   const services = [
     {
       title: 'Scanner Service',
-      description: 'Run network port scans and view results',
+      description: 'Run network port scans and view results (edited for testing)',
       path: '/scan',
     },
     {
