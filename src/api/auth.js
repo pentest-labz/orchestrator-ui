@@ -1,4 +1,4 @@
-const API_URL = `http://${MINIKUBE_IP}:32002`;
+const API_URL = `http://192.168.49.2:32002`;
 
 export async function register({ username, password }) {
   const res = await fetch(`${API_URL}/register`, {
