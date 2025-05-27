@@ -1,4 +1,4 @@
-const BASE = 'http://192.168.49.2:5002'
+const BASE = 'http://192.168.49.2:31002'
 
 export async function triggerBrute(body, token, signal) {
   const url = `${BASE}/brute`
